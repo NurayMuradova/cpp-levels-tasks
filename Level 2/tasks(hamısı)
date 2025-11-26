@@ -1,0 +1,223 @@
+#include <iostream>
+
+int main() {
+        int a, b;
+            std::cout << "Iki eded daxil edin (A B): ";
+                std::cin >> a >> b;
+                    
+                        if (a > b) {
+                                    std::cout << a << " ededi daha boyukdur." << std::endl;
+                        } else if (b > a) {
+                                    std::cout << b << " ededi daha boyukdur." << std::endl;
+                        } else {
+                                    std::cout << "Ededler beraberdir." << std::endl;
+                        }
+                            return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        int eded;
+            std::cout << "Bir eded daxil edin: ";
+                std::cin >> eded;
+                    
+                        if (eded > 0) {
+                                    std::cout << "Eded musbetdir." << std::endl;
+                        } else if (eded < 0) {
+                                    std::cout << "Eded menfidir." << std::endl;
+                        } else {
+                                    std::cout << "Eded sifirdir." << std::endl;
+                        }
+                            return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        int x, y, z;
+            std::cout << "Uc eded daxil edin (X Y Z): ";
+                std::cin >> x >> y >> z;
+                    
+                        int en_boyuk = x; // Fərz edirik ki, ən böyük x-dir
+                            
+                                if (y > en_boyuk) {
+                                            en_boyuk = y;
+                                }
+                                    if (z > en_boyuk) {
+                                                en_boyuk = z;
+                                    }
+                                        
+                                            std::cout << "En boyuk eded: " << en_boyuk << std::endl;
+                                                return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        int eded;
+            std::cout << "Bir eded daxil edin: ";
+                std::cin >> eded;
+                    
+                        // Qalıq (modul) operatorundan (%) istifadə edirik
+                            if (eded % 2 == 0) {
+                                        std::cout << eded << " cut ededdir." << std::endl;
+                            } else {
+                                        std::cout << eded << " tek ededdir." << std::endl;
+                            }
+                                return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        int bal;
+            std::cout << "Imtahan balini daxil edin (0-100): ";
+                std::cin >> bal;
+                    
+                        char qiymet;
+
+                            if (bal < 0 || bal > 100) {
+                                        std::cout << "Yanlis bal daxil edildi." << std::endl;
+                                                return 1;
+                            } 
+                                
+                                    if (bal >= 91) {
+                                                qiymet = 'A';
+                                    } else if (bal >= 81) {
+                                                qiymet = 'B';
+                                    } else if (bal >= 71) {
+                                                qiymet = 'C';
+                                    } else if (bal >= 61) {
+                                                qiymet = 'D';
+                                    } else if (bal >= 51) {
+                                                qiymet = 'E';
+                                    } else { // 0-50
+                                            qiymet = 'F';
+                                                }
+                                                    
+                                                        std::cout << "Telebenin qiymeti: " << qiymet << std::endl;
+                                                            return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        int ay;
+            std::cout << "Ay nomresini daxil edin (1-12): ";
+                std::cin >> ay;
+                    
+                        if (ay < 1 || ay > 12) {
+                                    std::cout << "Yanlis ay nomresi daxil edildi." << std::endl;
+                                            return 1;
+                        }
+
+                            if (ay == 12 || ay == 1 || ay == 2) {
+                                        std::cout << "Fesil: Qis" << std::endl;
+                            } else if (ay >= 3 && ay <= 5) {
+                                        std::cout << "Fesil: Yaz" << std::endl;
+                            } else if (ay >= 6 && ay <= 8) {
+                                        std::cout << "Fesil: Yay" << std::endl;
+                            } else { // 9, 10, 11
+                                    std::cout << "Fesil: Payiz" << std::endl;
+                                        }
+                                            
+                                                return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        double a, b, netice;
+            char emeliyyat;
+                
+                    std::cout << "Emeliyyati daxil edin (+, -, *, /): ";
+                        std::cin >> emeliyyat;
+                            
+                                std::cout << "Iki eded daxil edin (A B): ";
+                                    std::cin >> a >> b;
+                                        
+                                            bool xeta = false;
+
+                                                switch (emeliyyat) {
+                                                            case '+':
+                                                                        netice = a + b;
+                                                                                    break;
+                                                                                            case '-':
+                                                                                                        netice = a - b;
+                                                                                                                    break;
+                                                                                                                            case '*':
+                                                                                                                                        netice = a * b;
+                                                                                                                                                    break;
+        #include <iostream>
+        
+        int main() {
+                int reqem; 
+
+                    std::cout << "Bir eded daxil edin: ";
+                        std::cin >> reqem;
+
+                            int kvadrat = reqem * reqem;
+                                int kub = reqem * reqem * reqem;
+
+                                    std::cout << "Daxil etdiyiniz ededin kvadrati: " << kvadrat << "\n";
+                                        std::cout << "Daxil etdiyiniz ededin kubu: " << kub << "\n";
+
+                                            return 0;
+        }
+        }                                                                                                                                                    case '/':
+                                                                                                                                                                        if (b != 0) {
+                                                                                                                                                                                            netice = a / b;
+                                                                                                                                                                        } else {
+                                                                                                                                                                                            std::cout << "Sifira bolmek mumkun deyil!" << std::endl;
+                                                                                                                                                                                                            xeta = true;
+                                                                                                                                                                        }
+                                                                                                                                                                                    break;
+                                                                                                                                                                                            default:
+                                                                                                                                                                                                        std::cout << "Yanlis emeliyyat daxil edildi." << std::endl;
+                                                                                                                                                                                                                    xeta = true;
+                                                                                                                                                                                                                                break;
+                                                }
+
+                                                    if (!xeta) {
+                                                                std::cout << "Netice: " << netice << std::endl;
+                                                    }
+                                                        
+                                                            return 0;
+
+                                                    
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                
+
+                            
+                            
+                            
+                        
+
+                                    
+                                    
+                                    
+                                    
+                                    
+                            
+
+                            
+                            
+
+                                    
+                                
+
+                        
+                        
+                        
+
+                        
+                        
+                        

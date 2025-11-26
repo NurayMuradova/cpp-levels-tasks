@@ -1,0 +1,289 @@
+#include<iostream>
+using namespace std;
+int i=1;
+int main()
+{
+        while(i<=10){
+                
+                    cout << i << " ";
+                        
+                            i++;
+        }
+            
+                return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int i=2;
+int main()
+{
+        while(i<=100){
+                
+                    cout << i << " ";
+                        
+                            i=i+2;
+        }
+            
+                return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int i=1 , s=0;
+int main()
+{
+        while(i<=100){
+                i=i+1;
+                    s=s+i;
+        }
+            cout << s;
+                return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int i=1 , a , s=1;
+int main()
+{
+        cin >> a;
+            while(i<=a){
+                    s=s*i;
+                        i=i+1;
+                            
+            }
+                cout << s;
+                    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+int i=1 , a , s=1;
+int main()
+{
+        cin >> a;
+            while(i<=a){
+                    s=s*i;
+                        i=i+1;
+                            
+            }
+                cout << s;
+                    return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+#include<cmath>
+int a,s;
+int main()
+{ 
+
+        cout << "eded daxil edin" << endl;
+            cin>>a;
+                while (a>0){
+                        int k=a%10;
+                            a=a/10;
+                                s+=k;}
+                                    cout << "rəqəmləri cəmi:"<< s << endl;
+                                        
+                                            return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+double a,b=1,s=0;
+int main()
+{
+    cout << "eded daxil edin: " << endl;
+    cin >> a;
+    while(a!=b){
+        s+=b;
+        b++;}
+
+
+            cout << "cəmi " <<s << endl;
+                return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+double b, a=0,s=0;
+int main()
+
+{cout << "eded daxil edin " << endl;
+ while(a==0){ 
+    cin >> b;
+    if(b!=0){
+        s+=b;}
+        else 
+        break;
+
+ }
+     cout << "cəmi "<<s << endl;
+         return 0;
+}
+
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int a,b=0;
+        cout << "ədədi daxil edin " << endl;
+            cin >> a;
+                while(a>0){
+                        int k=a%10;
+                            a/=10;
+                                b=b*10+k;
+                }
+                    cout << "ədədin tərsi "<< b << endl;
+                        return 0;
+}
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int a,I=2,s=0;
+        cout << "ədəd daxil edin" << endl;
+            cin >> a;
+                for(I;I<(a/2);I++){
+                        if(a%I==0){
+                                s++;}
+                }
+                    if(s==0) {
+                            cout << "sadedir"<< endl;}
+                                else 
+                                    cout << "sadə deyil" << endl;
+                                        return 0;
+}
+
+
+#include <iostream>
+#include <vector>
+
+void printFibonacci(int N) {
+        if (N <= 0) return;
+            long long a = 0, b = 1;
+
+                std::cout << "Fibonacci: 0";
+                    if (N > 1) {
+                                for (int i = 2; i <= N; ++i) {
+                                                std::cout << ", " << b;
+                                                            long long temp = b;
+                                                                        b = a + b;
+                                                                                    a = temp;
+                                }
+                    }
+                        std::cout << std::endl;
+}
+
+
+#include <iostream>
+#include <iomanip>
+
+void printMultiplicationTable() {
+        for (int i = 1; i <= 10; ++i) {
+                    for (int j = 1; j <= 10; ++j) {
+                                    std::cout << std::setw(4) << i * j;
+                    }
+                            std::cout << "\n";
+        }
+}
+
+
+#include <iostream>
+
+void findDivisors(int number) {
+        std::cout << number << " bolenleri: ";
+            for (int i = 1; i <= number; ++i) {
+                        if (number % i == 0) {
+                                        std::cout << i << " ";
+                        }
+            }
+}
+
+
+#include <iostream>
+
+bool isPalindrome(int N) {
+        int original = N;
+            int reversed = 0;
+                while (N > 0) {
+                            reversed = reversed * 10 + (N % 10);
+                                    N /= 10;
+                }
+                    return original == reversed;
+}
+
+
+#include <iostream>
+
+void printDivisibleBy3And7() {
+        for (int i = 1; i <= 100; ++i) {
+                    if (i % 3 == 0 && i % 7 == 0) {
+                                    std::cout << i << " ";
+                    }
+        }
+}
+
+
+#include <iostream>
+
+int sumOfNElements(int N) {
+        int sum = 0;
+            int number;
+                for (int i = 0; i < N; ++i) {
+                            std::cout << "Eded " << i + 1 << ": ";
+                                    std::cin >> number;
+                                            sum += number;
+                }
+                    return sum;
+}
+                
+
+                    
+        
+
+                
+
+                        
+            
+
+                    
+        
+
+                                
+                    
+
+                    
+                        
+                
+
+                
+
+    
+
+    
+
+                
+
+            
+
+            
+
+        
+
+        
+
+        

@@ -1,0 +1,161 @@
+#include <iostream>
+#include <string>
+
+int main() {
+        std::string ad;
+            std::cout << "Adiniz: ";
+                std::getline(std::cin, ad);
+                    std::cout << "Salam, " << ad << "!" << std::endl;
+                        return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        int a, b;
+            std::cout << "A: ";
+                std::cin >> a;
+                    std::cout << "B: ";
+                        std::cin >> b;
+                            
+                                std::cout << "Cem: " << a + b << std::endl;
+                                    std::cout << "Ferq: " << a - b << std::endl;
+                                        std::cout << "Hasil: " << a * b << std::endl;
+                                            
+                                                if (b != 0) {
+                                                            std::cout << "Bolme: " << (double)a / b << std::endl;
+                                                } else {
+                                                            std::cout << "Bolme: Sifira bolmek olmaz." << std::endl;
+                                                }
+                                                    return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        double x;
+            std::cout << "Eded: ";
+                std::cin >> x;
+                    
+                        double kvadrat = x * x;
+                            double kub = x * x * x;
+                                
+                                    std::cout << "Kvadrati: " << kvadrat << std::endl;
+                                        std::cout << "Kubu: " << kub << std::endl;
+                                            return 0;
+}
+
+
+#include <iostream>
+
+const double PI = 3.1415926535; 
+
+int main() {
+        double r;
+            std::cout << "Radius: ";
+                std::cin >> r;
+                    
+                        double sahe = PI * r * r;
+                            double cevre = 2 * PI * r;
+                                
+                                    std::cout << "Sahe: " << sahe << std::endl;
+                                        std::cout << "Cevre: " << cevre << std::endl;
+                                            return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        double c;
+            std::cout << "Selsi (C): ";
+                std::cin >> c;
+                    
+                        double f = (c * 9.0/5.0) + 32;
+                            std::cout << c << " C = " << f << " F" << std::endl;
+                                
+                                    // Əks çevirmə (Fahrenheit -> Selsi)
+                                        // double c_geri = (f - 32) * 5.0/9.0; 
+                                            
+                                                return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        double n1, n2, n3;
+            std::cout << "3 eded daxil edin: ";
+                std::cin >> n1 >> n2 >> n3;
+                    
+                        double ortalama = (n1 + n2 + n3) / 3.0;
+                            
+                                std::cout << "Ortalama: " << ortalama << std::endl;
+                                    return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        int x, y;
+            std::cout << "X: ";
+                std::cin >> x;
+                    std::cout << "Y: ";
+                        std::cin >> y;
+                            
+                                std::cout << "Evvel: X=" << x << ", Y=" << y << std::endl;
+                                    
+                                        int temp = x;
+                                            x = y;
+                                                y = temp;
+                                                    
+                                                        std::cout << "Sonra: X=" << x << ", Y=" << y << std::endl;
+                                                            return 0;
+}
+
+
+#include <iostream>
+
+int main() {
+        double a;
+            std::cout << "Teref: ";
+                std::cin >> a;
+                    
+                        double sahe = a * a;
+                            double perimetr = 4 * a;
+                                
+                                    std::cout << "Sahe: " << sahe << std::endl;
+                                        std::cout << "Perimetr: " << perimetr << std::endl;
+                                            return 0;
+}
+
+
+#include <iostream>
+#include <iomanip>
+
+int main() {
+        long long s;
+            std::cout << "Saniye: ";
+                std::cin >> s;
+                    
+                        double deqiqe = (double)s / 60.0;
+                            double saat = (double)s / 3600.0;
+                                
+                                    std::cout << std::fixed << std::setprecision(2);
+                                        std::cout << "Deqiqe: " << deqiqe << std::endl;
+                                            std::cout << "Saat: " << saat << std::endl;
+                                                
+                                                    return 0;
+}
+
+
+
+
+
+
+                                                
+                                                
+
