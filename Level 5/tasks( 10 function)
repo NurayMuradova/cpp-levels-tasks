@@ -1,0 +1,237 @@
+Level 1 (1-ci sert)
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void salamla() {
+    string ad;
+    cout << "Adinizi daxil edin: ";
+    cin >> ad;
+    cout << "Salam, " << ad << "!" << endl;
+}
+
+int main() {
+    salamla(); 
+    return 0;
+}
+
+Level 1 (4-cu sert)
+
+#include <iostream>
+using namespace std;
+
+double sahesi(double r) {
+    return 3.14 * r * r;
+}
+
+double cevresi(double r) {
+    return 2 * 3.14 * r;
+}
+
+int main() {
+    double r;
+    cout << "Dairenin radiusunu daxil edin: ";
+    cin >> r;
+
+    cout << "Sahesi: " << sahesi(r) << endl;
+    cout << "Cevresi: " << cevresi(r) << endl;
+
+    return 0;
+}
+
+Level 1( 7-ci sert)
+
+#include <iostream>
+using namespace std;
+
+void swapEdedler(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    int x, y;
+    cout << "Birinci ededi daxil edin: ";
+    cin >> x;
+    cout << "Ikinci ededi daxil edin: ";
+    cin >> y;
+
+    swapEdedler(x, y);
+
+    cout << "Deyismis ededler: x = " << x << ", y = " << y << endl;
+
+    return 0;
+}
+
+Level 2( 3-cu sert)
+
+#include <iostream>
+using namespace std;
+
+int enBoyuyu(int a, int b, int c) {
+    if (a >= b && a >= c)
+        return a;
+    else if (b >= a && b >= c)
+        return b;
+    else
+        return c;
+}
+
+int main() {
+    int x, y, z;
+    cout << "Birinci ededi daxil edin: ";
+    cin >> x;
+    cout << "Ikinci ededi daxil edin: ";
+    cin >> y;
+    cout << "Ucuncu ededi daxil edin: ";
+    cin >> z;
+
+    cout << "En boyuk eded: " << enBoyuyu(x, y, z) << endl;
+
+    return 0;
+}
+
+
+Level 2( 6-ci sert)
+
+#include <iostream>
+using namespace std;
+
+void fesliniGoster(int ay) {
+    if (ay == 12 || ay == 1 || ay == 2)
+        cout << "Qis" << endl;
+    else if (ay >= 3 && ay <= 5)
+        cout << "Yaz" << endl;
+    else if (ay >= 6 && ay <= 8)
+        cout << "Yay" << endl;
+    else if (ay >= 9 && ay <= 11)
+        cout << "Payiz" << endl;
+    else
+        cout << "Duzgun ay nomresi daxil edin!" << endl;
+}
+
+int main() {
+    int ay;
+    cout << "Ay nomresini daxil edin (1-12): ";
+    cin >> ay;
+
+    fesliniGoster(ay);
+
+    return 0;
+}
+
+Level 3(3-cu sert)
+
+#include <iostream>
+using namespace std;
+
+int cemHesabla() {
+    int cem = 0;
+    for (int i = 1; i <= 100; i++) {
+        cem += i;
+    }
+    return cem;
+}
+
+int main() {
+    cout << "1-den 100-e qeder ededlerin cemi: " << cemHesabla() << endl;
+    return 0;
+}
+
+Level 3( 11-ci sert)
+
+#include <iostream>
+using namespace std;
+
+void vurmaCedveli(int max) {
+    for (int i = 1; i <= max; i++) {
+        for (int j = 1; j <= max; j++) {
+            cout << i << " x " << j << " = " << i * j << "\t";
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+    vurmaCedveli(10); 
+    return 0;
+}
+
+Level 3( 15-ci sert)
+
+#include <iostream>
+using namespace std;
+
+int cemHesabla(int n) {
+    int cem = 0;
+    int eded;
+    for (int i = 0; i < n; i++) {
+        cout << "Bir eded daxil edin: ";
+        cin >> eded;
+        cem += eded;
+    }
+    return cem;
+}
+
+int main() {
+    int N;
+    cout << "Nece eded daxil etmek istersiniz? ";
+    cin >> N;
+
+    int cem = cemHesabla(N);
+    cout << "Daxil edilmis ededlerin cemi: " << cem << endl;
+
+    return 0;
+}
+
+Level 4( 8- ci sert)
+
+#include <iostream>
+using namespace std;
+
+void binaryFormasi(int n) {
+    for (int i = 31; i >= 0; i--) {
+        cout << ((n >> i) & 1);
+    }
+    cout << endl;
+}
+
+int main() {
+    int x, y;
+    cout << "Birinci ededi daxil edin: ";
+    cin >> x;
+    cout << "Ikinci ededi daxil edin: ";
+    cin >> y;
+
+    cout << "Birinci ededin binary formasi: ";
+    binaryFormasi(x);
+    cout << "Ikinci ededin binary formasi: ";
+    binaryFormasi(y);
+
+    return 0;
+}
+
+Level 4( 11-ci sert)
+
+#include <iostream>
+using namespace std;
+
+void fibonacci1000() {
+    int a = 0, b = 1;
+    while (a < 1000) {
+        cout << a << " ";
+        int temp = a;
+        a = b;
+        b = temp + b;
+    }
+    cout << endl;
+}
+
+int main() {
+    fibonacci1000();
+    return 0;
+}
+
